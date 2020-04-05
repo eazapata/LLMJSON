@@ -1,0 +1,191 @@
+[{
+	"id": 0,
+	"nom": "Palma",
+	"descripcion": "Hotel de Mallorca.",
+	"moneda": "€",
+	"valoraciones": {
+		"TripAdvisor": "4",
+		"Booking": "5",
+		"Trivago": "6"
+	},
+	"comidas": [{
+		"tipo": "desayuno",
+		"precioLimpio": "10",
+		"impuesto": "21",
+		"total": "12.1",
+		"moneda": "€"
+	}, {
+		"tipo": "comida",
+		"precioLimpio": "10",
+		"impuesto": "21",
+		"total": "12.1",
+		"moneda": "€"
+	}, {
+		"tipo": "cena",
+		"precioLimpio": "10",
+		"impuesto": "21",
+		"total": "12.1",
+		"moneda": "€"
+	}],
+	"estrelles": "5",
+	"servicios": [{
+		"servicio": "Piscina",
+		"disponible": true,
+		"precioLimpio": "5",
+		"impuesto": "21",
+		"total": "6",
+		"moneda": "€"
+	}, {
+		"servicio": "Sauna",
+		"precioLimpio": "0",
+		"impuesto": "21",
+		"total": "0",
+		"momenda": "€"
+	}, {
+		"servicio": "Wifi",
+		"disponible": true,
+		"precioLimpio": "0",
+		"impuesto": "21",
+		"total": "0",
+		"momenda": "€"
+	}],
+	"idiomas": ["español", "ingles"],
+	"mascotas": {
+		"permitidas": true,
+		"tipo": ["perro", "gato"]
+	},
+	"contacto": {
+		"telefono": "971249482",
+		"ubicacion": "tucalle",
+		"inicioHorarioAtencion": "10:00",
+		"finHorarioAtencion": "20:00",
+		"correo": "tucorreo@mail.com"
+	},
+	"entradaInicio": "11:00",
+	"entradaFin": "20:00",
+	"salidaInicio": "11:30",
+	"salidaFin": "12:00",
+	"parking": {
+		"disponible": true,
+		"precio": "20"
+	}
+}, {
+	"id": 1,
+	"nom": "Madrid",
+	"descripcion": "Hotel de Madrid",
+	"moneda": "$",
+	"valoraciones": {
+		"TripAdvisor": "1",
+		"Booking": "1",
+		"Trivago": "1"
+	},
+	"comidas": [{
+		"tipo": "desayuno",
+		"precioLimpio": "10",
+		"impuesto": "11",
+		"total": "11",
+		"moneda": "$"
+	}, {
+		"tipo": "cena",
+		"precioLimpio": "10",
+		"impuesto": "11",
+		"total": "11",
+		"moneda": "$"
+	}],
+	"estrelles": "2",
+	"servicios": [{
+		"servicio": "Sauna",
+		"precioLimpio": "1",
+		"impuesto": "11",
+		"total": "1",
+		"momenda": "$"
+	}, {
+		"servicio": "Wifi"
+		"precioLimpio": "0",
+		"impuesto": "11",
+		"total": "0",
+		"momenda": "$"
+	}],
+	"idiomas": ["español", "aleman"],
+	"mascotas": {
+		"permitidas": true,
+		"tipo": ["perro", "gato"]
+	},
+	"contacto": {
+		"telefono": "971249482",
+		"ubicacion": "tucalle",
+		"inicioHorarioAtencion": "11:00",
+		"finHorarioAtencion": "19:00",
+		"correo": "tucorreo@mail.com"
+	},
+	"entradaInicio": "10:00",
+	"entradaFin": "21:00",
+	"salidaInicio": "00:00",
+	"salidaFin": "00:00",
+	"parking": {
+		"disponible": false
+	}
+}, {
+	"id": 2,
+	"nom": "Barcelon",
+	"descripcion": "asd",
+	"moneda": "€",
+	"valoraciones": {
+		"TripAdvisor": "4",
+		"Booking": "4",
+		"Trivago": "4"
+	},
+	"comidas": [{
+		"tipo": "desayuno",
+		"precioLimpio": "10",
+		"impuesto": "21",
+		"total": "11",
+		"moneda": "€"
+	}, {
+		"tipo": "comida",
+		"precioLimpio": "10",
+		"impuesto": "21",
+		"total": "11.1",
+		"moneda": "€"
+	}, {
+		"tipo": "cena",
+		"precioLimpio": "10",
+		"impuesto": "21",
+		"total": "11",
+		"moneda": "€"
+	}],
+	"estrelles": "5",
+	"servicios": [{
+		"servicio": "Sauna",
+		"precioLimpio": "1",
+		"impuesto": "21",
+		"total": "1",
+		"momenda": "€"
+	}, {
+		"servicio": "Wifi"
+		"precioLimpio": "0",
+		"impuesto": "21",
+		"total": "0",
+		"momenda": "€"
+	}],
+	"idiomas": ["español", "frances"],
+	"mascotas": {
+		"permitidas": false,
+		"tipo": []
+	},
+	"contacto": {
+		"telefono": "971249482",
+		"ubicacion": "sucalle",
+		"inicioHorarioAtencion": "09:00",
+		"finHorarioAtencion": "16:00",
+		"correo": "tucorreo@mail.com"
+	},
+	"entradaInicio": "09:00",
+	"entradaFin": "18:00",
+	"salidaInicio": "10:00",
+	"salidaFin": "12:00",
+	"parking": {
+		"disponible": true,
+		"precio": "20"
+	}
+}]
