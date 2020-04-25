@@ -1,0 +1,146 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.filtros{
+    margin-left: 20%;
+}
+.filtros li{
+    margin-left:10%;
+}
+.iconos{
+    width: 3%;
+}
+body{
+    font-family: "Roboto", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    background-image: url(https://lh3.googleusercontent.com/ZD68tQJ6NHX1c6skQ2awdBH2uRIjySy15mXILAhQyseViqSW5Xp4J9Q5mNtHdVk4dFOHrUM2q-jCe8-WNwlLiIE=s1140);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header {
+            margin: 10%;
+            margin-bottom: 0%;
+            margin-top: 0%;
+            padding: 10px;
+          
+            /*Com tenim dins floats. Això ens va bé per obligar a que els elements interns estiguin dins aquest contenidor.*/
+            
+        }
+        #fondo{
+            background-color: #003580;
+            color: whitesmoke;
+            width: 100%;
+        }
+
+        aside {
+            
+            padding: 10px;
+            margin: 2%;
+            float: left;
+            width: 250px;
+            background-color:#febb02;
+            border-radius: 20%;
+        }
+        aside h2{
+            margin-left: 10%;
+        }
+
+        main {
+            padding: 10px;
+            margin: 5px;
+            float: left;
+            width: 1000px;
+            background-color: white;
+            border-radius: 5%;
+        }
+
+        footer {
+            padding: 10px;
+            clear: left;
+            background-color: #003580;
+            color: whitesmoke;
+        }
+
+        button {
+            margin-left: 10px;
+        }
+
+        #JsonText {
+            margin: 10px;
+        }
+
+        #modificar {
+            display: none;
+        }
+
+        .elementHabitacio {
+            margin-bottom: 10px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        #logoWeb {
+            float: left;
+        }
+        .logo{
+            display: inline;    
+        }
+
+        #headerOptions {
+            float: right;
+            
+        }
+
+            #headerOptions a {
+                margin-left: 20px;
+                color: whitesmoke;
+            }
+
+        #logoWeb img {
+            width: 5%;
+        }
+        nav{
+            margin: 10%;
+            margin-bottom: 0%;
+            margin-top: 5%;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 10px;
+            color: whitesmoke;
+        }
+
+        #cercador{
+            width: 90%;
+            margin: auto;
+        }
+
+        #cercador div {
+            margin-bottom: 10px;
+        }
+
+        .mesInfo {
+            display: none;
+        }
+
+        .imgMiniHab {
+            width:100px;
+        }
+        .habitacio{overflow:hidden;width:840px;}
+        .imatgeHab,.infoHab,.preuHab{float:left;overflow:hidden;border:1px solid lightgray; padding:10px;}
+        .imatgeHab{width:120px;}
+        .infoHab{width:500px;}
+        .preuHab{width:150px;}
+        .informacioExtesa{width:800px;clear:left;border:1px solid lightgray; padding:10px;margin: 5px;text-align:right;}
+        .titolHotel{margin:0px; float:left;}
+        .hotelDescripcio{clear:both;}
+        .estrelles{margin: 2px 0 0 10px; float:left} 
+        .seleccionar{text-align:right;margin-right:10px}
+        #preu{width:150px;overflow:hidden; float:left;border:1px solid black}
+        #resultats{float:left;width:840px;}

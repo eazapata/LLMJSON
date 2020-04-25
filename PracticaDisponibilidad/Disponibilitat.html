@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script type="text/javascript" src="./js/script.js"></script>
+    <title>CIFP Hotels. La web més cutre de reserves d'hotels.</title>
+    <link rel="shortcut icon" type="image/png" href="./src/logo.jfif" />
+</head>
+<body onload="init();">
+    <form id="dispo" action="cotitzacio.html" method="get">
+        <input type="hidden" name="parJson" id="parJson" value="" />
+    </form>
+    <div id="fondo">
+        <header id="head">
+            <!--**Aqui posar la imatge del vostre logo**-->
+            <div id="logoWeb">
+                <img class="logo" src="./src/logo.jfif" alt="Logo">
+                <h1 class="logo">Buscador de habitaciones CIFP Francesc de Borja Moll</h1>
+            </div>
+            <div id="headerOptions">
+                <a href="">Login</a>
+                <a href="">Canviar idioma</a>
+            </div>
+        </header>
+    
+        <nav>
+            <img class="iconos"src="./src/88970.png" alt="Hoteles">
+            <a href="">Hoteles</a>
+            <img class="iconos" src="./src/22648.png" alt="vuelos">
+            <a href="">Vuelos</a>
+            <img class="iconos" src="./src/kisspng-computer-icons-cruise-ship-panarea-transport-cruiser-svg-png-icon-free-download-99-8-onlin-5cdf417caa7b39.9216453615581351646983.png" alt="Cruceros">
+            <a href="">Cruceros</a>
+        </nav>
+    </div>
+    <aside>
+        <h2>Filtres:</h2>
+        <ul id="llistaFiltres">
+            <li class="filtros">
+                Serveis:
+                <ul>
+                    <li>
+                        Gym<input type="checkbox" class="filtre" id="filterGym" onclick="aplicarFiltres();" />
+                    </li>
+                    <li>
+                        Restaurant<input type="checkbox" class="filtre" id="filterRestaurant"
+                            onclick="aplicarFiltres();" />
+                    </li>
+                    <li>
+                        Spa<input type="checkbox" class="filtre" id="filterSpa" onclick="aplicarFiltres();" />
+                    </li>
+                </ul>
+            </li>
+            <li class="filtros">
+                Menjars:
+                <ul>
+                    <li>
+                        Berenar<input type="checkbox" class="filtre" id="filterBerenar"
+                            onclick="aplicarFiltres();" />
+                    </li>
+                    <li>
+                        Dinar<input type="checkbox" class="filtre" id="filterDinar" onclick="aplicarFiltres();" />
+                    </li>
+                    <li>
+                        Sopar<input type="checkbox" class="filtre" id="filterSopar" onclick="aplicarFiltres();" />
+                    </li>
+                </ul>
+            </li>
+            <li class="filtros">
+                Idioma:
+                <ul>
+                    <li>
+                        Català<input type="checkbox" class="filtre" id="filterCat" onclick="aplicarFiltres();" />
+                    </li>
+                    <li>
+                        Castellà<input type="checkbox" class="filtre" id="filterCas" onclick="aplicarFiltres();" />
+                    </li>
+                    <li>
+                        Euskera<input type="checkbox" class="filtre" id="filterEus" onclick="aplicarFiltres();" />
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+    <main>
+        <fieldset id="cercador">
+            <legend>Cercador hotels:</legend>
+            <div>
+                <label>Temporada:</label>
+                <label>Baixa</label><input type="radio" name="temporada" id="baixa" value="baixa" />
+                <label>Alta</label><input type="radio" name="temporada" id="alta" value="alta" checked />
+            </div>
+            <div>
+                <label>Habitacions:</label>
+                <label>Individuals:</label>
+                <input type="number" id="individual" />
+                <label>Dobles:</label>
+                <input type="number" id="doble" />
+            </div>
+            <div>
+                <button id="cerca" type="button" onclick="realitzarcerca();">Cerca</button>
+            </div>
+        </fieldset>
+        <div id="resultats">
+            -
+        </div>
+        <div id="preu">
+            <h3>Preu Total:</h3>
+            <div><label id="preuValor">0</label><label id="preuMoneda"></label></div>
+            <div>Seleccio:</div>
+            <div>Habitacions:<label id="numHabitacions">0</label> </div>
+            <button id="continuar" type="button" onclick="continuar();">continuar</button>
+        </div>
+    </main>
+    <footer id="peu">
+        <!--Els peus a intranets no són molt necessàris. Podeu possar-hi El nom de l'empresa + versió de la pàgina -->
+        Una mostra realitzada per Tomeu Canyelles
+    </footer>
+</body>
+</html>

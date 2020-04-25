@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script type="text/javascript" src="./js/script.js"></script>
+    <title>CIFP Hotels. La web més cutre de reserves d'hotels.</title>
+    <link rel="shortcut icon" type="image/png" href="./src/logo.jfif" />
+
+
+</head>
+
+<body>
+    <form id="dispo" action="cotitzacio.html" method="get">
+        <div id="fondo">
+            <header id="head">
+                <!--**Aqui posar la imatge del vostre logo**-->
+                <div id="logoWeb">
+                    <img class="logo" src="./src/logo.jfif" alt="Logo">
+                    <h1 class="logo">Buscador de habitaciones CIFP Francesc de Borja Moll</h1>
+                </div>
+                <div id="headerOptions">
+                    <a href="">Login</a>
+                    <a href="">Canviar idioma</a>
+            </header>
+        </div>
+            <nav>
+                <img class="iconos"src="./src/88970.png" alt="Hoteles">
+                <a href="">Hoteles</a>
+                <img class="iconos" src="./src/22648.png" alt="vuelos">
+                <a href="">Vuelos</a>
+                <img class="iconos" src="./src/kisspng-computer-icons-cruise-ship-panarea-transport-cruiser-svg-png-icon-free-download-99-8-onlin-5cdf417caa7b39.9216453615581351646983.png" alt="Cruceros">
+                <a href="">Cruceros</a>
+            </nav>
+        </div>
+        <aside>
+            <h2>Filtres:</h2>
+            <ul id="llistaFiltres">
+                <li class="filtros">
+                    Serveis:
+                    <ul>
+                        <li>
+                            Gym<input type="checkbox" class="filtre" id="filterGym" onclick="aplicarFiltres();" />
+                        </li>
+                        <li>
+                            Restaurant<input type="checkbox" class="filtre" id="filterRestaurant"
+                                onclick="aplicarFiltres();" />
+                        </li>
+                        <li>
+                            Spa<input type="checkbox" class="filtre" id="filterSpa" onclick="aplicarFiltres();" />
+                        </li>
+                    </ul>
+                </li>
+                <li class="filtros">
+                    Menjars:
+                    <ul>
+                        <li>
+                            Berenar<input type="checkbox" class="filtre" id="filterBerenar"
+                                onclick="aplicarFiltres();" />
+                        </li>
+                        <li>
+                            Dinar<input type="checkbox" class="filtre" id="filterDinar" onclick="aplicarFiltres();" />
+                        </li>
+                        <li>
+                            Sopar<input type="checkbox" class="filtre" id="filterSopar" onclick="aplicarFiltres();" />
+                        </li>
+                    </ul>
+                </li>
+                <li class="filtros">
+                    Idioma:
+                    <ul>
+                        <li>
+                            Català<input type="checkbox" class="filtre" id="filterCat" onclick="aplicarFiltres();" />
+                        </li>
+                        <li>
+                            Castellà<input type="checkbox" class="filtre" id="filterCas" onclick="aplicarFiltres();" />
+                        </li>
+                        <li>
+                            Euskera<input type="checkbox" class="filtre" id="filterEus" onclick="aplicarFiltres();" />
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            <fieldset id="cercador">
+                <legend>Cercador hotels:</legend>
+                <div>
+                    <label>Temporada:</label>
+                    <label>Baixa</label><input type="radio" name="temporada" id="baixa" value="baixa" />
+                    <label>Alta</label><input type="radio" name="temporada" id="alta" value="alta" checked />
+                </div>
+                <div>
+                    <label>Habitacions:</label>
+                    <label>Individuals:</label>
+                    <input type="number" id="individual" />
+                    <label>Dobles:</label>
+                    <input type="number" id="doble" />
+                </div>
+                <div>
+                    <button type="button" id="cerca" onclick="realitzarcerca();">Cerca</button>
+                </div>
+            </fieldset>
+            <div id="resultats">
+                <div id="notrobat" class="habitacio" style="display:none">
+                    <div>
+                        No hem trobat habitacions per la teva cerca
+                    </div>
+                </div>
+                <div class="habitacio">
+                    <div class="imatgeHab">
+                        <img class="imgMiniHab"
+                            src="https://raw.githubusercontent.com/TomeuC/ProvaPerJon/master/1489763093510.jpg" />
+                    </div>
+                    <div class="infoHab">
+                        <h3 class="titolHotel">Hotel Borja Moll</h3>
+                        <div class="estrelles">Estrelles *</div>
+                        <div class="hotelDescripcio">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum convallis
+                            nisl, ut cursus dui congue a. Aliquam aliquet dolor quis suscipit eleifend. Etiam et
+                            vehicula ipsum. Nulla facilisi. Vivamus aliquam condimentum magna, lacinia gravida orci
+                            tincidunt eget. Duis at ultrices est. Praesent aliquam, turpis vitae vestibulum dignissim,
+                            eros justo tempus felis, in interdum quam risus sed quam. In sit amet sodales neque. Cras
+                            leo velit, feugiat vehicula leo id, molestie molestie magna
+                        </div>
+                    </div>
+                    <div class="preuHab">
+                        <p>Preu 20€</p>
+                        <p>Impostos 21% </p>
+                        <p>Preu Total 24,2 </p>
+                    </div>
+                    <div class="informacioExtesa">
+                        <p onclick="mostrarElement(this)">Més informació</p>
+                        <div class="mesInfo">Mostrariem més informació</div>
+                    </div>
+                    <div class="seleccionar">
+                        <label>Quantitat:</label>
+                        <input type="number" />
+                        <button type="button" onclick="seleccionarHabitacio()">Seleccionar. </button>
+                    </div>
+                </div>
+                <div class="habitacio">
+                    <div class="imatgeHab">
+                        <img class="imgMiniHab"
+                            src="https://raw.githubusercontent.com/TomeuC/ProvaPerJon/master/1489763093510.jpg" />
+                    </div>
+                    <div class="infoHab">
+                        <h3 class="titolHotel">Hotel Borja Moll</h3>
+                        <div class="estrelles">Estrelles *</div>
+                        <div class="hotelDescripcio">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum convallis
+                            nisl, ut cursus dui congue a. Aliquam aliquet dolor quis suscipit eleifend. Etiam et
+                            vehicula ipsum. Nulla facilisi. Vivamus aliquam condimentum magna, lacinia gravida orci
+                            tincidunt eget. Duis at ultrices est. Praesent aliquam, turpis vitae vestibulum dignissim,
+                            eros justo tempus felis, in interdum quam risus sed quam. In sit amet sodales neque. Cras
+                            leo velit, feugiat vehicula leo id, molestie molestie magna
+                        </div>
+                    </div>
+                    <div class="preuHab">
+                        <p>Preu 20€</p>
+                        <p>Impostos 21% </p>
+                        <p>Preu Total 24,2 </p>
+                    </div>
+                    <div class="informacioExtesa">
+                        <p onclick="mostrarElement(this)">Més informació</p>
+                        <div class="mesInfo">Mostrariem més informació</div>
+                    </div>
+                    <div class="seleccionar">
+                        <label>Quantitat:</label>
+                        <input type="number" />
+                        <button type="button" onclick="seleccionarHabitacio()">Seleccionar. </button>
+                    </div>
+                </div>
+                <div class="habitacio">
+                    <div class="imatgeHab">
+                        <img class="imgMiniHab"
+                            src="https://raw.githubusercontent.com/TomeuC/ProvaPerJon/master/1489763093510.jpg" />
+                    </div>
+                    <div class="infoHab">
+                        <h3 class="titolHotel">Hotel Borja Moll</h3>
+                        <div class="estrelles">Estrelles *</div>
+                        <div class="hotelDescripcio">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum convallis
+                            nisl, ut cursus dui congue a. Aliquam aliquet dolor quis suscipit eleifend. Etiam et
+                            vehicula ipsum. Nulla facilisi. Vivamus aliquam condimentum magna, lacinia gravida orci
+                            tincidunt eget. Duis at ultrices est. Praesent aliquam, turpis vitae vestibulum dignissim,
+                            eros justo tempus felis, in interdum quam risus sed quam. In sit amet sodales neque. Cras
+                            leo velit, feugiat vehicula leo id, molestie molestie magna
+                        </div>
+                    </div>
+                    <div class="preuHab">
+                        <p>Preu 20€</p>
+                        <p>Impostos 21% </p>
+                        <p>Preu Total 24,2 </p>
+                    </div>
+                    <div class="informacioExtesa">
+                        <p onclick="mostrarElement(this)">Més informació</p>
+                        <div class="mesInfo">Mostrariem més informació</div>
+                    </div>
+                    <div class="seleccionar">
+                        <label>Quantitat:</label>
+                        <input type="number" />
+                        <button type="button" onclick="seleccionarHabitacio()">Seleccionar. </button>
+                    </div>
+                </div>
+                <div class="habitacio">
+                    <div class="imatgeHab">
+                        <img class="imgMiniHab"
+                            src="https://raw.githubusercontent.com/TomeuC/ProvaPerJon/master/1489763093510.jpg" />
+                    </div>
+                    <div class="infoHab">
+                        <h3 class="titolHotel">Hotel Borja Moll</h3>
+                        <div class="estrelles">Estrelles *</div>
+                        <div class="hotelDescripcio">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum convallis
+                            nisl, ut cursus dui congue a. Aliquam aliquet dolor quis suscipit eleifend. Etiam et
+                            vehicula ipsum. Nulla facilisi. Vivamus aliquam condimentum magna, lacinia gravida orci
+                            tincidunt eget. Duis at ultrices est. Praesent aliquam, turpis vitae vestibulum dignissim,
+                            eros justo tempus felis, in interdum quam risus sed quam. In sit amet sodales neque. Cras
+                            leo velit, feugiat vehicula leo id, molestie molestie magna
+                        </div>
+                    </div>
+                    <div class="preuHab">
+                        <p>Preu 20€</p>
+                        <p>Impostos 21% </p>
+                        <p>Preu Total 24,2 </p>
+                    </div>
+                    <div class="informacioExtesa">
+                        <p onclick="mostrarElement(this)">Més informació</p>
+                        <div class="mesInfo">Mostrariem més informació</div>
+                    </div>
+                    <div class="seleccionar">
+                        <label>Quantitat:</label>
+                        <input type="number" />
+                        <button type="button" onclick="seleccionarHabitacio()">Seleccionar. </button>
+                    </div>
+                </div>
+                <div class="habitacio">
+                    <div class="imatgeHab">
+                        <img class="imgMiniHab"
+                            src="https://raw.githubusercontent.com/TomeuC/ProvaPerJon/master/1489763093510.jpg" />
+                    </div>
+                    <div class="infoHab">
+                        <h3 class="titolHotel">Hotel Borja Moll</h3>
+                        <div class="estrelles">Estrelles *</div>
+                        <div class="hotelDescripcio">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum convallis
+                            nisl, ut cursus dui congue a. Aliquam aliquet dolor quis suscipit eleifend. Etiam et
+                            vehicula ipsum. Nulla facilisi. Vivamus aliquam condimentum magna, lacinia gravida orci
+                            tincidunt eget. Duis at ultrices est. Praesent aliquam, turpis vitae vestibulum dignissim,
+                            eros justo tempus felis, in interdum quam risus sed quam. In sit amet sodales neque. Cras
+                            leo velit, feugiat vehicula leo id, molestie molestie magna
+                        </div>
+                    </div>
+                    <div class="preuHab">
+                        <p>Preu 20€</p>
+                        <p>Impostos 21% </p>
+                        <p>Preu Total 24,2 </p>
+                    </div>
+                    <div class="informacioExtesa">
+                        <p onclick="mostrarElement(this)">Més informació</p>
+                        <div class="mesInfo">Mostrariem més informació</div>
+                    </div>
+                    <div class="seleccionar">
+                        <label>Quantitat:</label>
+                        <input type="number" />
+                        <button type="button" onclick="seleccionarHabitacio()">Seleccionar. </button>
+                    </div>
+                </div>
+            </div>
+            <div id="preu">
+                <div>Preu Total</div>
+                <div>100€</div>
+                <div>Seleccionades:</div>
+                <div>3 habitacions.</div>
+                <div><button type="button">Continuar</button></div>
+            </div>
+        </main>
+        <footer id="peu">
+            <!--Els peus a intranets no són molt necessàris. Podeu possar-hi El nom de l'empresa + versió de la pàgina -->
+            <p>Buscador de habitaciones v1.0</p>
+            © 2020 GitHub, Inc.
+            Terms
+            Privacy
+            Security
+            Status
+            Help
+            Contact GitHub
+            Pricing
+            API
+            Training
+            Blog
+            About
+        </footer>
+    </form>
+</body>
+
+</html>
