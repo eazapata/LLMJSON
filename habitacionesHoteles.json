@@ -99,7 +99,7 @@
 				{
 					"habitacion": 1,
 					"camas":{
-						"indiv": 1,
+						"indiv": 10,
 						"doble": 0
 					},
 					"comodidadesHabitación": [
