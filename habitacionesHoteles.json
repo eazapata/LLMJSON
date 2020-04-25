@@ -145,7 +145,8 @@
 									"precioTempAlta": 15,
 									"precioLimpio": 17,
 									"impuestos": 21,
-									"comision": 10
+									"comision": 10,
+									"tempAlta":true
 								},
 								{
 									"agregador": 2,
@@ -153,7 +154,8 @@
 									"precioTempAlta": 14,
 									"precioLimpio": 16,
 									"impuestos": 21,
-									"comision": 10
+									"comision": 10,
+									"tempAlta":true
 								},
 								{
 									"agregador": 3,
@@ -161,7 +163,8 @@
 									"precioTempAlta": 16,
 									"precioLimpio": 18,
 									"impuestos": 21,
-									"comision": 10
+									"comision": 10,
+									"tempAlta":true
 								}
 							]
 						,
@@ -172,7 +175,8 @@
 									"precioTempBaja": 7,
 									"precioLimpio": 8,
 									"impuestos": 21,
-									"comision": 10
+									"comision": 10,
+									"tempAlta":false
 								},
 								{
 									"agregador": 2,
@@ -180,7 +184,8 @@
 									"precioTempBaja": 8,
 									"precioLimpio": 9,
 									"impuestos": 21,
-									"comision": 10
+									"comision": 10,
+									"tempAlta":false
 								},
 								{
 									"agregador": 3,
@@ -188,7 +193,8 @@
 									"precioTempBaja": 6,
 									"precioLimpio": 7,
 									"impuestos": 21,
-									"comision": 10
+									"comision": 10,
+									"tempAlta":false
 								}
 							]
 						
@@ -227,15 +233,15 @@
 						}
 					],
 					"precios": [
-						{
-							"tempAlta": [
+						[
 								{
 									"agregador": 1,
 									"moneda": "€",
 									"precioTempAlta": 16,
 									"precioLimpio": 18,
 									"impuestos": 21,
-									"comision": 10
+									"comision": 10,
+									"tempAlta":true
 								},
 								{
 									"agregador": 2,
@@ -243,7 +249,8 @@
 									"precioTempAlta": 15,
 									"precioLimpio": 17,
 									"impuestos": 21,
-									"comision": 10
+									"comision": 10,
+									"tempAlta":true
 								},
 								{
 									"agregador": 3,
@@ -251,19 +258,20 @@
 									"precioTempAlta": 17,
 									"precioLimpio": 19,
 									"impuestos": 21,
-									"comision": 10
+									"comision": 10,
+									"tempAlta":true
 								}
 							]
-						},
-						{
-							"tempBaja": [
+						,
+						 [
 								{
 									"agregador": 1,
 									"moneda": "€",
 									"precioTempBaja": 8,
 									"precioLimpio": 9,
 									"impuestos": 21,
-									"comision": 10
+									"comision": 10,
+									"tempAlta":false
 								},
 								{
 									"agregador": 2,
@@ -271,7 +279,8 @@
 									"precioTempBaja": 7,
 									"precioLimpio": 8,
 									"impuestos": 21,
-									"comision": 10
+									"comision": 10,
+									"tempAlta":false
 								},
 								{
 									"agregador": 3,
@@ -279,10 +288,11 @@
 									"precioTempBaja": 8,
 									"precioLimpio": 9,
 									"impuestos": 21,
-									"comision": 10
+									"comision": 10,
+									"tempAlta":false
 								}
 							]
-						}
+						
 					]
 				},
 				{
@@ -318,15 +328,15 @@
 						}
 					],
 					"precios": [
-						{
-							"tempAlta": [
+					 [
 								{
 									"agregador": 1,
 									"moneda": "€",
 									"precioTempAlta": 14,
 									"precioLimpio": 16,
 									"impuestos": 21,
-									"comision": 10
+									"comision": 10,
+									"tempAlta":true
 								},
 								{
 									"agregador": 2,
@@ -334,7 +344,8 @@
 									"precioTempAlta": 15,
 									"precioLimpio": 17,
 									"impuestos": 21,
-									"comision": 10
+									"comision": 10,
+									"tempAlta":true
 								},
 								{
 									"agregador": 3,
@@ -342,19 +353,21 @@
 									"precioTempAlta": 16,
 									"precioLimpio": 18,
 									"impuestos": 21,
-									"comision": 10
+									"comision": 10,
+									"tempAlta":true
 								}
 							]
-						},
-						{
-							"tempBaja": [
+						,
+						
+							 [
 								{
 									"agregador": 1,
 									"moneda": "€",
 									"precioTempBaja": 7,
 									"precioLimpio": 9,
 									"impuestos": 21,
-									"comision": 10
+									"comision": 10,
+									"tempAlta":false
 								},
 								{
 									"agregador": 2,
@@ -362,7 +375,8 @@
 									"precioTempBaja": 7,
 									"precioLimpio": 9,
 									"impuestos": 21,
-									"comision": 10
+									"comision": 10,
+									"tempAlta":false
 								},
 								{
 									"agregador": 3,
@@ -370,10 +384,11 @@
 									"precioTempBaja": 8,
 									"precioLimpio": 10,
 									"impuestos": 21,
-									"comision": 10
+									"comision": 10,
+									"tempAlta":false
 								}
 							]
-						}
+						
 					]
 				}
 			],
