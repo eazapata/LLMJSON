@@ -138,8 +138,7 @@
 						}
 					],
 					"precios": [
-						{
-							"tempAlta": [
+						 [
 								{
 									"agregador": 1,
 									"moneda": "€",
@@ -165,9 +164,8 @@
 									"comision": 10
 								}
 							]
-						},
-						{
-							"tempBaja": [
+						,
+						[
 								{
 									"agregador": 1,
 									"moneda": "€",
@@ -193,7 +191,7 @@
 									"comision": 10
 								}
 							]
-						}
+						
 					]
 				},
 				{
