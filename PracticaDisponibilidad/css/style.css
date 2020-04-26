@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
 }
+
 .filtros{
     margin-left: 20%;
 }
@@ -38,9 +39,9 @@ header {
         aside {
             
             padding: 10px;
-            margin: 2%;
+            margin: 20px;
             float: left;
-            width: 250px;
+            width: 20%;
             background-color:#febb02;
             border-radius: 20%;
         }
@@ -50,18 +51,21 @@ header {
 
         main {
             padding: 10px;
-            margin: 5px;
-            float: left;
-            width: 1000px;
+            margin: 20px;
+            margin-bottom: 5%;
+            float: right;
+            width: 70%;
             background-color: white;
-            border-radius: 5%;
         }
 
         footer {
             padding: 10px;
+            width: 100%;
             clear: left;
             background-color: #003580;
             color: whitesmoke;
+            position: fixed;
+            bottom: 0;
         }
 
         button {
@@ -132,15 +136,61 @@ header {
         .imgMiniHab {
             width:100px;
         }
-        .habitacio{overflow:hidden;width:840px;}
-        .imatgeHab,.infoHab,.preuHab{float:left;overflow:hidden;border:1px solid lightgray; padding:10px;}
-        .imatgeHab{width:120px;}
-        .infoHab{width:500px;}
-        .preuHab{width:150px;}
-        .informacioExtesa{width:800px;clear:left;border:1px solid lightgray; padding:10px;margin: 5px;text-align:right;}
-        .titolHotel{margin:0px; float:left;}
-        .hotelDescripcio{clear:both;}
-        .estrelles{margin: 2px 0 0 10px; float:left} 
-        .seleccionar{text-align:right;margin-right:10px}
-        #preu{width:150px;overflow:hidden; float:left;border:1px solid black}
-        #resultats{float:left;width:840px;}
+        .habitacio{
+            overflow:hidden;
+            width:840px;
+        }
+        .imatgeHab,.infoHab,.preuHab{
+            float:left;
+            overflow:hidden;
+            border:1px solid lightgray; 
+            padding:10px;
+            width: 90%;
+        }
+        .imatgeHab{
+            width:120px;
+        }
+        .infoHab{
+            width:500px;
+        }
+        .preuHab{
+            width:150px;
+        }
+        .informacioExtesa{
+            width:90%;
+            clear:left;
+            border:1px solid lightgray; 
+            padding:10px;
+            
+            text-align:center;
+        }
+        .titolHotel{
+            margin:0px; 
+            float:left;
+        }
+        .hotelDescripcio{
+            clear:both;
+        }
+        .estrelles{
+            margin: 2px 0 0 10px; 
+            float:left
+        } 
+        .seleccionar{
+            text-align:center;
+            margin-right:10px;
+            width: 90%;
+        }
+        .inputSeleccionar{
+            width: 20%;
+        }
+        #preu{
+            width:120px;
+            overflow:hidden; 
+            float:left;
+            border:1px solid black;
+            text-align: center;
+        }
+        #resultats{
+            float:left;
+            width:840px;
+        }
