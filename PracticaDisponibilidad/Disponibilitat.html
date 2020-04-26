@@ -6,7 +6,7 @@
     <title>CIFP Hotels. La web més cutre de reserves d'hotels.</title>
     <link rel="shortcut icon" type="image/png" href="./src/logo.jfif" />
 </head>
-<body onload="init();">
+<body onload="init(); ocultarPrecios();">
     <form id="dispo" action="cotitzacio.html" method="get">
         <input type="hidden" name="parJson" id="parJson" value="" />
     </form>
@@ -92,28 +92,44 @@
             <div>
                 <label>Habitacions:</label>
                 <label>Individuals:</label>
-                <input type="number" id="individual" />
+                <input type="number" id="individual" value="0"/>
                 <label>Dobles:</label>
-                <input type="number" id="doble" />
+                <input type="number" id="doble"value="0" />
             </div>
             <div>
                 <button id="cerca" type="button" onclick="realitzarcerca();">Cerca</button>
             </div>
         </fieldset>
         <div id="resultats">
-            -
         </div>
         <div id="preu">
             <h3>Preu Total:</h3>
-            <div><label id="preuValor">0</label><label id="preuMoneda"></label></div>
+            <div>
+                <label id="preuValor"></label>
+                <label id="preuMoneda"></label>
+            </div>
             <div>Seleccio:</div>
-            <div>Habitacions:<label id="numHabitacions">0</label> </div>
+            <div>Habitacions:
+                <label id="numHabitacions">0</label> 
+            </div>
             <button id="continuar" type="button" onclick="continuar();">continuar</button>
         </div>
     </main>
     <footer id="peu">
         <!--Els peus a intranets no són molt necessàris. Podeu possar-hi El nom de l'empresa + versió de la pàgina -->
-        Una mostra realitzada per Tomeu Canyelles
+        <p>Buscador de habitaciones v1.0</p>
+        © 2020 GitHub, Inc.
+        Terms
+        Privacy
+        Security
+        Status
+        Help
+        Contact GitHub
+        Pricing
+        API
+        Training
+        Blog
+        About
     </footer>
 </body>
 </html>
