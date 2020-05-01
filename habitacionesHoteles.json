@@ -495,7 +495,7 @@
 								"moneda": "$",
 								"precioTempAlta": 15,
 								"precioLimpio": 17,
-								"impuestos": 21,
+								"impuestos": 11,
 								"comision": 10,
 								"tempAlta": true
 							},
@@ -504,7 +504,7 @@
 								"moneda": "$",
 								"precioTempAlta": 14,
 								"precioLimpio": 16,
-								"impuestos": 21,
+								"impuestos": 11,
 								"comision": 10,
 								"tempAlta": true
 							},
@@ -513,7 +513,7 @@
 								"moneda": "$",
 								"precioTempAlta": 16,
 								"precioLimpio": 18,
-								"impuestos": 21,
+								"impuestos": 11,
 								"comision": 10,
 								"tempAlta": true
 							}
@@ -524,7 +524,7 @@
 								"moneda": "$",
 								"precioTempBaja": 7,
 								"precioLimpio": 8,
-								"impuestos": 21,
+								"impuestos": 11,
 								"comision": 10,
 								"tempAlta": false
 							},
@@ -533,7 +533,7 @@
 								"moneda": "$",
 								"precioTempBaja": 8,
 								"precioLimpio": 9,
-								"impuestos": 21,
+								"impuestos": 11,
 								"comision": 10,
 								"tempAlta": false
 							},
@@ -542,7 +542,7 @@
 								"moneda": "$",
 								"precioTempBaja": 6,
 								"precioLimpio": 7,
-								"impuestos": 21,
+								"impuestos": 11,
 								"comision": 10,
 								"tempAlta": false
 							}
