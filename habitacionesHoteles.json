@@ -63,7 +63,7 @@
 					"moneda": "€"
 				},
 				{
-					"servicio": "Sauna",
+					"servicio": "Gimnasio",
 					"precioLimpio": "0",
 					"impuesto": "21",
 					"total": "0",
@@ -788,6 +788,13 @@
 				},
 				{
 					"servicio": "Wifi",
+					"precioLimpio": "0",
+					"impuesto": "21",
+					"total": "0",
+					"momenda": "€"
+				},
+				{
+					"servicio": "Gimnasio",
 					"precioLimpio": "0",
 					"impuesto": "21",
 					"total": "0",
