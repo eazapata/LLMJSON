@@ -746,7 +746,7 @@
 		},
 		{
 			"hotelId": 2,
-			"nom": "Barcelon",
+			"nom": "Barcelo",
 			"descripcion": "asd",
 			"moneda": "€",
 			"valoraciones": {
@@ -956,8 +956,8 @@
 							{
 								"agregador": 1,
 								"moneda": "€",
-								"precioTempAlta": 10,
-								"precioLimpio": 12,
+								"precioTempAlta": 12,
+								"precioLimpio": 14,
 								"impuestos": 21,
 								"comision": 10,
 								"tempAlta": true
