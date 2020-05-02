@@ -23,6 +23,7 @@
 		{
 			"hotelId": 0,
 			"nom": "Palma",
+			"ubicacion":"palmaMallorca",
 			"descripcion": "Hotel de Mallorca.",
 			"moneda": "€",
 			"valoraciones": {
@@ -397,6 +398,7 @@
 		{
 			"hotelId": 1,
 			"nom": "Madrid",
+			"ubicacion":"madrid",
 			"descripcion": "Hotel de Madrid",
 			"moneda": "$",
 			"valoraciones": {
@@ -747,6 +749,7 @@
 		{
 			"hotelId": 2,
 			"nom": "Barcelo",
+			"ubicacion":"barcenola",
 			"descripcion": "asd",
 			"moneda": "€",
 			"valoraciones": {
