@@ -749,7 +749,7 @@
 		{
 			"hotelId": 2,
 			"nom": "Barcelo",
-			"ubicacion":"barcenola",
+			"ubicacion":"barcelona",
 			"descripcion": "asd",
 			"moneda": "€",
 			"valoraciones": {
